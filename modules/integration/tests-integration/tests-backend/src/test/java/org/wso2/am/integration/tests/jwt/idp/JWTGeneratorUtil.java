@@ -103,7 +103,7 @@ public class JWTGeneratorUtil {
         FileInputStream fileInputStream = new FileInputStream(privateKeyFile);
         keyStore.load(fileInputStream, keyStorePassword.toCharArray());
         Certificate publicCert = keyStore.getCertificate(keyAlias);
-        MessageDigest digestValue = MessageDigest.getInstance("SHA-1");
+        MessageDigest digestValue = MessageDigest.getInstance("SHA-256");
         byte[] der = publicCert.getEncoded();
         digestValue.update(der);
         byte[] digestInBytes = digestValue.digest();
