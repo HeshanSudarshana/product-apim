@@ -109,13 +109,13 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-<!--    <test name="apim-integration-tests-api-lifecycle-2" preserve-order="true" parallel="false" group-by-instances="true">-->
-<!--        <parameter name="group" value="group4"/>-->
-<!--        <classes>-->
+    <test name="apim-integration-tests-api-lifecycle-2" preserve-order="true" parallel="false" group-by-instances="true">
+        <parameter name="group" value="group4"/>
+        <classes>
 <!--            <class name="org.wso2.am.integration.tests.rest.MalformedRequestTest"/>-->
 <!--            <class name="org.wso2.am.integration.tests.other.ScriptMediatorTestCase"/>-->
 <!--            <class name="org.wso2.am.integration.tests.api.lifecycle.RegistryLifeCycleInclusionTest"/>-->
-<!--            <class name="org.wso2.am.integration.tests.api.lifecycle.CustomLifeCycleTestCase"/>-->
+            <class name="org.wso2.am.integration.tests.api.lifecycle.CustomLifeCycleTestCase"/>
 <!--            <class name="org.wso2.am.integration.tests.api.lifecycle.APIMANAGER5337SubscriptionRetainTestCase"/>-->
 <!--            <class name="org.wso2.am.integration.tests.header.CustomHeaderTestCase"/>-->
 <!--            &lt;!&ndash;<class name="org.wso2.am.integration.tests.header.DuplicateHeaderTestCase"/>&ndash;&gt;-->
@@ -130,8 +130,8 @@
 <!--            <class name="org.wso2.am.integration.tests.other.APICreationForTenantsTestCase" />-->
 <!--            <class name="org.wso2.am.integration.tests.operationPolicy.JWTClaimBasedAccessValidatorPolicyTestCase"/>-->
 <!--            <class name="org.wso2.am.integration.tests.api.lifecycle.APISecurityTestCase" />-->
-<!--        </classes>-->
-<!--    </test>-->
+        </classes>
+    </test>
 
 <!--    <test name="apim-email-secondary-userstore-tests" preserve-order="true" parallel="false" group-by-instances="true">-->
 <!--        <parameter name="group" value="group3"/>-->
@@ -373,14 +373,14 @@
         <parameter name="group" value="group4"/>
         <classes>
             <class name="org.wso2.am.integration.tests.other.AdvancedConfigDeploymentConfig"/>
-<!--            <class name="org.wso2.am.integration.tests.other.NotificationTestCase"/>-->
+            <class name="org.wso2.am.integration.tests.other.NotificationTestCase"/>
 <!--            <class name="org.wso2.am.integration.tests.json.ESBJAVA3380TestCase"/>-->
 <!--            &lt;!&ndash;THis test will be enabled once the stats event streams are finalized  &ndash;&gt;-->
 <!--            &lt;!&ndash; <class name="org.wso2.am.integration.tests.stats.APIInvocationStatPublisherTestCase"/>&ndash;&gt;-->
 <!--            &lt;!&ndash; Temporarily disabling intermittently failing test&ndash;&gt;-->
 <!--            &lt;!&ndash;<class name="org.wso2.am.integration.tests.other.APIStateChangeWorkflowTestCase"/>&ndash;&gt;-->
-<!--            <class name="org.wso2.am.integration.tests.other.TokenEncryptionScopeTestCase"/>-->
-<!--            <class name="org.wso2.am.integration.tests.other.APIMANAGER5843WSDLHostnameTestCase"/>-->
+            <class name="org.wso2.am.integration.tests.other.TokenEncryptionScopeTestCase"/>
+            <class name="org.wso2.am.integration.tests.other.APIMANAGER5843WSDLHostnameTestCase"/>
 <!--            <class name="org.wso2.am.integration.tests.other.APIM4312NPEAfterRequestTimeoutTestCase"/>-->
 <!--            <class name="org.wso2.am.integration.tests.other.GIT2231HeadRequestNPEErrorTestCase"/>-->
 <!--            <class name="org.wso2.am.integration.tests.websocket.WebSocketAPICorsValidationTestCase"/>-->
